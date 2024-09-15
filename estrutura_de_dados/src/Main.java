@@ -1,3 +1,4 @@
+import ListaDuplamenteEncadeada.ControleDeVersaoV2;
 import ListaSimplesmenteEncadeada.ControleDeVersao;
 import ListaSimplesmenteEncadeada.GerenciadorDeTarefas;
 import ListaSimplesmenteEncadeada.HistoricoDeNavegacao;
@@ -63,5 +64,41 @@ public class Main {
 //            }
 //
 //        }
+
+//Descomente o codigo abaixo para executar o exercicio 03
+        ControleDeVersaoV2 text = new ControleDeVersaoV2();
+        Scanner myScan = new Scanner(System.in);
+        boolean condition = true;
+
+        while (condition){
+            System.out.println("Texto atual");
+            System.out.println(text.getHead());
+            System.out.println("Digite '0' para sair");
+            System.out.println("Digite '1' para desfazer");
+            System.out.println("Digite '2' para refazer");
+            System.out.println("Digite '3' para acrescentar texto");
+
+            System.out.print("escolha uma opção: ");
+            int option = myScan.nextInt();
+
+            switch (option){
+                case 0:
+                    condition = false;
+                    break;
+                case 1:
+                    text.undo();
+                    break;
+                case 2:
+                    text.redo();
+                    break;
+                case 3:
+                    myScan.nextLine();
+                    System.out.println(text.getHead());
+                    String newText = myScan.nextLine();
+                    text.add(newText);
+                    break;
+            }
+
+        }
     }
 }
