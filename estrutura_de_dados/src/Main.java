@@ -1,4 +1,5 @@
 import Filas.FilaBanco;
+import Filas.FilaProcessos;
 import Filas.GerenciamentoImpressao;
 import ListaDuplamenteEncadeada.ControleDeVersaoV2;
 import ListaDuplamenteEncadeada.JogoCartas;
@@ -148,5 +149,17 @@ public class Main {
 //        fila.remove();
 //
 //        fila.printFila();
+
+//        Descomente o codigo abaixo para executar o exercicio 08
+        FilaProcessos processos = new FilaProcessos();
+
+        processos.add("visualStudio");
+        processos.add("Mysql");
+        processos.add("worbench");
+        processos.print();
+
+        processos.remove();
+
+        processos.print();
     }
 }
