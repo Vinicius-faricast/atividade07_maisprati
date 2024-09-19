@@ -1,3 +1,5 @@
+import Filas.FilaBanco;
+import Filas.GerenciamentoImpressao;
 import ListaDuplamenteEncadeada.ControleDeVersaoV2;
 import ListaDuplamenteEncadeada.JogoCartas;
 import ListaSimplesmenteEncadeada.ControleDeVersao;
@@ -66,7 +68,7 @@ public class Main {
 //
 //        }
 
-//Descomente o codigo abaixo para executar o exercicio 03
+//Descomente o codigo abaixo para executar o exercicio 04
 //        ControleDeVersaoV2 text = new ControleDeVersaoV2();
 //        Scanner myScan = new Scanner(System.in);
 //        boolean condition = true;
@@ -102,7 +104,7 @@ public class Main {
 //
 //        }
 
-//Descomente o codigo abaixo para executar o exercicio 04
+//Descomente o codigo abaixo para executar o exercicio 05
 //        JogoCartas jogo = new JogoCartas();
 //
 //        jogo.print();
@@ -121,6 +123,30 @@ public class Main {
 //        jogo.reorder(1, "back");
 //        jogo.print();
 //        jogo.reorder(0, "back");
+
+//Descomente o codigo abaixo para executar o exercicio 06
+//        FilaBanco fila = new FilaBanco();
 //
+//        fila.add("Fulano");
+//        fila.add("Cicrano");
+//        fila.add("Beltrano");
+//
+//        fila.print();
+//
+//        fila.remove();
+//
+//        fila.print();
+
+//        Descomente o codigo abaixo para executar o exercicio 07
+//        GerenciamentoImpressao fila = new GerenciamentoImpressao();
+//
+//        fila.add("texto.txt");
+//        fila.add("imagem.img");
+//        fila.add("arquivo.pdf");
+//        fila.printFila();
+//
+//        fila.remove();
+//
+//        fila.printFila();
     }
 }
